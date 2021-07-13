@@ -19,6 +19,7 @@ js 스크롤 애니메이션 활용에 대해 많이 배웠음
 ## 2. three js portfolio tutorial
 
 ```
+https://www.youtube.com/watch?v=Q7AOvWpIVHU
 
 기존에 배웠던 three js 로 뭔가를 만들어 보고 싶었는데
 마침 알맞는 영상을 발견함
