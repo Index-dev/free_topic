@@ -1,23 +1,19 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { render } from "@testing-library/react";
 
-import App from "./App";
+import ListContainer from "./ListContainer";
 import tasks from "../fixtures/tasks";
-
 jest.mock("react-redux");
 
-describe("App", () => {
-  const dispatch = jest.fn();
-
-  useDispatch.mockImplementation(() => dispatch);
+describe("ListContainer", () => {
   useSelector.mockImplementation((selector) =>
     selector({
       tasks,
     })
   );
   it("renders tasks", () => {
-    const { container } = render(<App />);
+    const { container } = render(<ListContainer />);
 
     expect(container).toHaveTextContent("신나는 리액트 테스트");
   });

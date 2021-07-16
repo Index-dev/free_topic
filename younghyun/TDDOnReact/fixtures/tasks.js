@@ -1,6 +1,6 @@
 const tasks = [
-  { id: 1, title: '아무 일도 하기 싫다' },
-  { id: 2, title: '건물 매입' },
+  { id: 1, title: "신나는 리액트 테스트" },
+  { id: 2, title: "시그니엘 거주" },
 ];
 
 export default tasks;

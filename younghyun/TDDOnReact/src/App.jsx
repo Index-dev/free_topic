@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import ListContainer from "./ListContainer";
 
-import List from "./List";
+import { setTasks } from "./actions";
+import tasks from "../fixtures/tasks";
 
 export default function App() {
-  const tasks = [
-    { id: 1, title: "신나는 리액트 테스트" },
-    { id: 2, title: "시그니엘 매입" },
-  ];
-
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(setTasks(tasks));
+  });
   return (
     <div>
       <h1>To-do</h1>
-      <List tasks={tasks} />
+      <ListContainer />
     </div>
   );
 }
