@@ -1,0 +1,9 @@
+body{
+    height:10000px;
+    background: linear-gradient(150deg, red, orange, yellow, green, blue, purple,pink)
+    /* background: linear-gradient(blue, pink); */
+}
+h1{
+    color: #ffffff;
+    /* color: black; */
+}
